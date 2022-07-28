@@ -1,0 +1,92 @@
+/* Created by Ajay Path
+Date July 2022 */
+
+* {
+    box-sizing: border-box;
+    padding-left: 4px;
+}
+
+body{
+    background: #fff;
+}
+
+.image {
+    position: relative;
+    float: left;
+    width: 625px;
+    padding: 5px;
+}
+
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.image__img{
+    display: block;
+    width: 100%;
+}
+
+.image__overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Quicksand', sans-serif;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.image__overlay >* {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.image__overlay:hover{
+    opacity: 1;
+}
+
+.image__overlay:hover >* {
+    transform: translateY(0);
+}
+
+.image__title{
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.image__description{
+    font-size: 1.15em;
+    margin-top: 0.25em;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.in-line{
+    font-size: 2em;
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+    text-align: center;
+    color: #326295;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.logo{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.h1{
+    color: #326295;
+    font-family: 'Quicksand', sans-serif;
+}

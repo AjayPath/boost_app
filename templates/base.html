@@ -1,0 +1,68 @@
+<!-- Created by Ajay Path
+Date July 2022 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/style.css')}}">
+</head>
+<body>
+    <div class="logo">
+        <img src="https://raw.githubusercontent.com/AjanthanPathmanathan/powertrust_app_test/main/full_logo_1.png" width="250px" height="50px" alt="powertrust logo">
+        <h1 class="h1" style="text-align: center;">My Boost Profile!</h1>
+    </div>
+    <div>
+        <p style="text-align: center;"><iframe class="map", src="/map" width="600" height="600"></iframe></p>
+    </div>
+
+    <div>
+        <p class="in-line">Your boost tokens helped power {{ boost_token }} people!</p>
+    </div>
+
+    <div class="row">
+        <div class="image">
+            <img class="image__img" src="https://raw.githubusercontent.com/AjanthanPathmanathan/powertrust_app_test/main/Wenchi.jpg" width = 100%>
+            <div class="image__overlay">
+                <div class="image__title">Wenchi, Ghana</div>
+                <p class="image__description">
+                    The Wenchi hospital, with the assistance of a solar+storage hybrid, now has reliable power to provide inpatient maternal and neonatal services.
+                    <br>
+
+                    <br>
+                    You have redeemed {{ site_a }} boosts from here!
+                </p>
+            </div>
+        </div>
+
+        <div class="image">
+            <img class="image__img" src="https://raw.githubusercontent.com/AjanthanPathmanathan/powertrust_app_test/main/Steung-Chrov.jpg" width = 100%>
+            <div class="image__overlay">
+                <div class="image__title">Steung Chrov, Cambodia</div>
+                <p class="image__description">
+                    The village of Steung Chrov now has access to electricity, providing light for households and power for small fishing-related enterprises.
+                    <br>
+                    <br>
+                    You have redeemed {{ site_b }} boosts from here!
+                </p>
+            </div>
+        </div>
+
+        <div class="image">
+            <img class="image__img" src="https://raw.githubusercontent.com/AjanthanPathmanathan/powertrust_app_test/main/LM.webp" width = 100%>
+            <div class="image__overlay">
+                <div class="image__title">Lingshed Monastary, Global Himalayan Expeditions</div>
+                <p class="image__description">
+                    The monastery can now allow monks to study at night, and provide travelers trekking the Himalayas with additional services.
+                    <br>
+                    <br>
+                    You have redeemed {{ site_c }} boosts from here!
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
