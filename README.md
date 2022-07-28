@@ -52,3 +52,15 @@ Slash-Comamnds:
 
 connect, total, distribute, redeem, profile
 
+## How to run the app:
+To run the app you will need two different command prompts open. In one prompt the file-path will be the boost_app.py file and the other will have the path for website.py.
+
+CMD:
+
+cd boost_app
+
+cd venv
+
+scripts\activate
+
+python "file-path"
